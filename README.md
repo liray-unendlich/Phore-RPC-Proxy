@@ -43,7 +43,7 @@ The easiest and multiplatform choise is to use Docker containers.
 
 3. Start phored instance.
     * `cd scripts/phored`
-    * `docker build --build-arg RPC_USER=$(echo RPC_USER) --build-arg RPC_PASS=$(echo RPC_PASS) -t phored`
+    * `docker build --build-arg RPC_USER=$(echo RPC_USER) --build-arg RPC_PASS=$(echo RPC_PASS) -t phored .`
     
     AND then  
     * `docker run -p $(echo $PHORED_PORT):11771 -p $(echo $PHORED_RPC_PORT):11772 -p $(echo $PHORED_WEB_PORT):80 
